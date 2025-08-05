@@ -1,32 +1,32 @@
 package org.example.Day_9;
 class VotingException extends Exception
 {
-   public String getMessage()
-   {
-       return "invalid age!";
-   }
-   public void vote(int age) throws VotingException
-   {
+    String message;
+  VotingException(String message)
+  {
+      this.message=message;
+  }
 
-           if(age>=18)
-               System.out.println("eligible");
-           else
-               throw new VotingException();
-
-   }
 }
 public class VotingSystem {
     public static void main(String args[])
     {
-        int age=18;
-       VotingException exception=new VotingException();
+        int age=17;
        try {
-           exception.vote(age);
+           validate(age);
        }
        catch (VotingException e)
        {
-           System.out.println(e.getMessage());
+           System.out.println(e.message);
        }
 
+    }
+    public  static void validate(int age) throws VotingException
+    {
+
+        if(age>=18)
+            System.out.println("eligible to vote");
+        else
+            throw new VotingException("not eligible");
     }
 }
