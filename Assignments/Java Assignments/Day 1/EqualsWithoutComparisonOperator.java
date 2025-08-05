@@ -13,7 +13,7 @@ public class EqualsWithoutComparisonOperator {
                 break;
         }
 
-        switch(((a-b)|(b-a))) {
+        switch(((a-b))) {
             // here we use bitwise operator for fast calculations(another method)
             case 0:
             System.out.println("equal");
@@ -27,3 +27,4 @@ public class EqualsWithoutComparisonOperator {
 
     }
 }
+
