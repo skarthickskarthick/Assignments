@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+         
+        <div class="top">
+            <div  class="logo">
+              <img src="images/rlogo.png" alt="" height="70px"width=70px>
+              
+            </div>
+            <div>
+                <h2>Registration Form</h2>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div class="form">
+        <form action="" id="form">
+            <div class="personaldetails">
+                
+             <div class="div1">
+                <h2>Personal Details</h2>
+           <div class="personal">
+            <label for="empid" class="required">Employee Id</label>
+            <input type="text" id="empid"  placeholder="Employee Id" >
+            <div class="error"></div>
+        </div>
+        <div class="personal">
+            <label for="name" class="required">Name</label>
+            <input type="text" id="name"  placeholder="Name" >
+            <div class="error"></div>
+        </div>
+          <div class="personal">
+            <label for="nickname">Nick Name</label>
+            <input type="text" id="nickname"  placeholder="Nick Name" >
+            <div class="error"></div>
+        </div>
+           <div class="personal">
+            <label for="dob" class="required">Date Of Birth</label>
+            <input type="date" id="dob"  placeholder="DOB" >
+            <div class="error"></div>
+        </div>
+          
+        <div class="personal">
+    <label class="required">Gender</label>
+    <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        
+        <input type="radio" id="transgender" name="gender" value="Transgender">
+        <label for="transgender">others</label>
+    </div>
+    <div class="error" id="gender-error"></div>
+</div>
+
+           <div class="personal">
+            <label for="email" class="required">Email Id</label>
+            <input type="text" id="email"  placeholder="Email Id" >
+            <div class="error"></div>
+        </div>
+        <div class="personal">
+            <label for="Phone" class="required">Phone Number</label>
+            <input type="tel" id="phone"  placeholder="Phone Number" >
+            <div class="error"></div>
+        </div>
+        <div class="personal">
+            <label for="adno" class="required">Aadhaar Number</label>
+            <input type="text" id="adno"  placeholder="Aadhaar Number" >
+            <div class="error"></div>
+        </div>
+          <div class="personal">
+            <label for="resume" class="required">Resume</label>
+            <input type="file" id="resume"  placeholder="Resume" >
+            <div class="error"></div>
+        </div>
+            </div>
+
+
+          <div class="div2">
+           <div class="address">
+            <label for="streetname"class="required">Present Address</label>
+            <div class="error"></div>
+            <input type="text" id="st1"  placeholder="street Name" >
+            <div class="error"></div>
+            <input type="text" id="loc1"  placeholder="Locality" >
+            <div class="error"></div>
+             <input type="text" id="dist1"  placeholder="District" >
+            <div class="error"></div>
+             <input type="text" id="pin1"  placeholder="Pin Code" >
+            <div class="error"></div>
+
+            <div class="selection">
+                
+            <select id="country1" >
+                 <option value="">-- Select Country --</option>
+            </select>
+
+            <div class="error"></div>
+            
+            
+            <select id="state1">
+                 <option value="">-- Select State --</option>
+            </select>
+            <div class="error"></div>
+            
+            </div>
+
+            </div>
+
+            <div class="address">
+            <label for="streetname">Permanent Adrress</label>
+            <div class="error"></div>
+            <div class="checkbox">
+                <input type="checkbox" id="checkadd" value="Same">
+            <label for="checkadd" >Same As Present Address</label>
+            
+            </div>
+           <input type="text" id="st2"  placeholder="street Name" >
+            <div class="error"></div>
+            <input type="text" id="loc2"  placeholder="Locality" >
+            <div class="error"></div>
+             <input type="text" id="dist2"  placeholder="District" >
+            <div class="error"></div>
+             <input type="text" id="pin2"  placeholder="Pin Code" >
+            <div class="error"></div>
+
+             <div class="selection">
+            <select id="country2" >
+                 <option value="">-- Select Country --</option>
+            </select>
+
+            <div class="error"></div>
+            <select id="state2">
+                 <option value="">-- Select State --</option>
+            </select>
+            <div class="error"></div>
+            </div>
+              <div class="buttons">
+        <button type="submit" class="submit">Submit</button>
+        <button type="reset" class="cancel">Cancel</button>
+        </div>
+
+            </div>
+        </div>
+
+
+      
+        </div>
+      
+        </form>
+        </div>
+    </body>
+</html>
