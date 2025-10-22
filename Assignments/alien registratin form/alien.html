@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alien Registration Portal</title>
+<link rel="stylesheet" href="alien-style.css">
+<script src="alien-script.js" defer></script>
+
+</head>
+<body>
+  <div class="form-container">
+    <h2>Alien Registration</h2>
+
+    <form id="alienForm">
+      <div class="form-group">
+        <label for="planetName">Planet Name</label>
+        <input type="text" id="planetName" placeholder="e.g. Mars5">
+        <div class="error" id="planetError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="antennaCount">Antenna Count</label>
+        <input type="text" id="antennaCount" placeholder="e.g. 4">
+        <div class="error" id="antennaError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="alienId">Alien ID</label>
+        <input type="text" id="alienId" placeholder="e.g. ZOR-XY_9999@UFO">
+        <div class="error" id="alienIdError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="phrase">Favorite Human Phrase</label>
+        <input type="text" id="phrase" placeholder="e.g. Hello! 😊">
+        <div class="error" id="phraseError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Landing Date</label>
+        <input type="date" id="date">
+        <div class="error" id="dateError"></div>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
